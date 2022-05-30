@@ -1,0 +1,16 @@
+{
+    "extends": "expo/tsconfig.base",
+    "compilerOptions": {
+        "allowJs": false,
+        "baseUrl": "./src",
+        "noImplicitAny": true
+    },
+    "include": ["src/**/*"],
+    "roots": ["<rootDir>/src"],
+    "testRegex": "((\\.|/*.)(test))\\.ts$",
+    "modulePaths": ["<rootDir>/src"],
+    "setupFilesAfterEnv": ["<rootDir>/config/setupTests.ts"],
+    "transform": {
+        "^.+\\.ts?$": "ts-jest",
+    }
+}
